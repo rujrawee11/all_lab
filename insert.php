@@ -19,7 +19,7 @@ if (!$conn)
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$sql = "INSERT INTO newtable (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
 
 if (mysqli_query($conn, $sql)) {
     echo '<div class="container">
