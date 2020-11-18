@@ -17,7 +17,7 @@ if (!$conn)
 }
 
 $ID = $_POST['ID'];
-$sql = "DELETE FROM guestbook WHERE ID='$ID'";
+$sql = "DELETE FROM newtable WHERE ID='$ID'";
 
 if (mysqli_query($conn, $sql)) {
     echo '<div class="container">
