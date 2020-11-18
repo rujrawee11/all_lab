@@ -15,10 +15,10 @@ if (!$conn)
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+$res = mysqli_query($conn, 'SELECT * FROM newtable');
 ?>
 <div class="container">
-    <h1>Guestbook</h1>
+    <h1>newtable</h1>
     <table class="table table-responsive-md">
         <thead>
             <tr>
