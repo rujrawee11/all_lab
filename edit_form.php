@@ -17,7 +17,7 @@ if (!$conn)
 }
 
 $ID = $_POST['ID'];
-$sql = "SELECT * FROM guestbook WHERE ID='$ID'";
+$sql = "SELECT * FROM newtable WHERE ID='$ID'";
 $res = mysqli_query($conn, $sql);
 $comment = mysqli_fetch_array($res);
 ?>
