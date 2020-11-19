@@ -39,7 +39,7 @@ while($row = mysqli_fetch_array($res))
                 <td><?php echo $row['Comment'];?></td>
                 <td><?php echo $row['Link'];?></td>
                 <td>
-               </tr>
+               
                     <div class="d-inline">
                         <form action="edit_form.php" method="post" class="d-inline">
                             <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
