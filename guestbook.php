@@ -34,10 +34,12 @@ while($row = mysqli_fetch_array($res))
 ?>
         <tbody>
             <tr>
+               <tr class="table-warning">
                 <td><?php echo $row['Name'];?></div></td>
                 <td><?php echo $row['Comment'];?></td>
                 <td><?php echo $row['Link'];?></td>
                 <td>
+               </tr>
                     <div class="d-inline">
                         <form action="edit_form.php" method="post" class="d-inline">
                             <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
