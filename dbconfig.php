@@ -1,8 +1,8 @@
 <?php
 return array(
-    'host' => 'host',
-    'username' => 'username',
-    'password' => 'password',
-    'database' => 'databasename',
+    'host' => 'rujrawee1.mysql.database.azure.com',
+    'username' => 'rujawee11@rujrawee1',
+    'password' => 'Neaybaby123',
+    'database' => 'rujrawee1',
 );
 ?>
