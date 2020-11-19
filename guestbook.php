@@ -20,7 +20,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <div class="container">
     <h1>Guestbook</h1>
     <table class="table table-responsive-md">
-        <thead class =".thead-light">
+        <thead class =".thead-dark">
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Comment</th>
