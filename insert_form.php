@@ -24,7 +24,7 @@
                 <input type="text" name="link" id="inputLink" class="form-control mb-2 mr-sm-2" placeholder="Enter Link">
             </div>
             <div class="mt-4">
-                <button type="submit" class="btn btn-light">Submit</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
                 <a role="button" class="btn btn-dark" href="guestbook.php">Back</a>
             </div>
         </form>
