@@ -42,7 +42,7 @@ $comment = mysqli_fetch_array($res);
                 ?>
             </div>
             <div class="mt-4">
-                <button type="submit" class="btn btn-light">Save</button>
+                <button type="submit" class="btn btn-dark">Save</button>
                 <a role="button" class="btn btn-dark" href="guestbook.php">Back</a>
             </div>
         </form>
