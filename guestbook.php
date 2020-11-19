@@ -34,7 +34,7 @@ while($row = mysqli_fetch_array($res))
 ?>
         <tbody>
             <tr>
-               <tr class="table-warning">
+               <tr class="table-info">
                 <td><?php echo $row['Name'];?></div></td>
                 <td><?php echo $row['Comment'];?></td>
                 <td><?php echo $row['Link'];?></td>
