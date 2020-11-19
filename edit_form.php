@@ -25,20 +25,20 @@ $comment = mysqli_fetch_array($res);
         <h1>Edit comment</h1>
         <form action="update.php" method="post" class="mt-4">
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputName">Name</label>
                 <?php
                     echo '<input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name" value="'.$comment["Name"].'">'
                 ?>
             </div>
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputComment">Comment</label>
-                <textarea name="comment" class="form-control" id="inputComment" rows="3" placeholder="Enter Comment"><?php echo $comment['Comment'];?></textarea>
+                <textarea name="comment" class="mb-2 mr-sm-2" id="inputComment" rows="3" placeholder="Enter Comment"><?php echo $comment['Comment'];?></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputLink">Link</label>
                 <?php
-                    echo '<input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Name" value="'.$comment["Link"].'">'
+                    echo '<input type="text" name="link" id="inputLink" class="mb-2 mr-sm-2" placeholder="Enter Name" value="'.$comment["Link"].'">'
                 ?>
             </div>
             <div class="mt-4">
