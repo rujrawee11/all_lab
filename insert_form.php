@@ -11,15 +11,15 @@
     <div class="container">
         <h1>Insert new comment</h1>
         <form action="insert.php" method="post" class="mt-4">
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputName">Name</label>
                 <input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name">
             </div>
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputComment">Comment</label>
                 <textarea name="comment" id="inputComment" class="form-control" rows="3" placeholder="Enter Comment"></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-inline">
                 <label for="inputLink">Link</label>
                 <input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Link">
             </div>
