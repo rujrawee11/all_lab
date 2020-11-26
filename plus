@@ -1,0 +1,1 @@
+SELECT ID,A,B,A+B AS C FROM table_name
