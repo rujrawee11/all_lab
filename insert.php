@@ -1,6 +1,6 @@
 <?php
 require('connect.php');
-    if(isset($_POST['submit'])){
+    if(isset($_POST['Submit'])){
         $num = $_POST['name'];
         $numa = $_POST['height'];
         $numb = $_POST['weight'];
@@ -36,8 +36,8 @@ require('connect.php');
         <h1>weight</h1>
         <input type="text" name="weight">
         <input type="submit" value="Submit" name="submit">
-        <div class="text-center">
-        <a href="index.php" class="btn btn-secondary">backt</a>
+
+
     </form>
 </body>
 
