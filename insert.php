@@ -4,13 +4,14 @@ require('connect.php');
         $num = $_POST['name'];
         $numa = $_POST['height'];
         $numb = $_POST['weight'];
-        $numc = $numa / ($numb**2);
+        $numc = ($numa / ($numb**2));
 
         $sql = "INSERT INTO test (name, height, weight, bmi) value ('$num','$numa', '$numb', '$numc')";
 
-        if(mysqli_query($conn, $sql)){
-            echo "New data insert successfully";
-            echo "<a href='index.php'>back to home page</a>";
+        <div class="mt-4">
+            <button type="submit" class="btn btn-dark">Submit</button>
+            <a role="button" class="btn btn-dark" href="index.php">Back</a>
+        </div>
         }
     }
 
