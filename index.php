@@ -15,7 +15,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'ihost.it.kmitl.ac.th', 'it63070143_it63070143', 'MNLyvs28', 'it63070143_it63070143', 3306);
+mysqli_real_connect($conn, 'rujrawee1.mysql.database.azure.com', 'rujawee11@rujrawee1', 'Neaybaby123',);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
