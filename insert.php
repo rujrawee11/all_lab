@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITF Database Lab</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 <?php
-$dbconfig = include('dbconfig.php');
-$conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['password'], $dbconfig['database']);
-if (!$conn)
+
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'ihost.it.kmitl.ac.th', 'it63070143_it63070143', 'MNLyvs28', 'it63070143_it63070143', 3306);
+if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+
+$name = $_POST['ชื่อ'];
+$height = $_POST['นำ้หนัก'];
+$weight = $_POST['ส่วนสูง'];
+$bmi = $_POST['bmi'];
+
+
+$sql = "INSERT INTO guestbook ( name , height , weight, Total = (weight / (height**)) VALUES ('$name', '$height', '$amount', '$total')";
+
 
 if (mysqli_query($conn, $sql)) {
-    echo '<div class="container">
-            <h3>Comment has been saved.</h3>
-            <a role="button" class="btn btn-success" href="guestbook.php">Home</a>
-         </div>';
-} else {
+    echo "<h2 style='text-align:center; color:black;'>New record created successfully</h2>";
+  } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+  }
   
 mysqli_close($conn);
 ?>
-</body>
-</html>
+<center><a href = "index.php"><button type="button" class="btn btn-info">Continue</button></a></center>
